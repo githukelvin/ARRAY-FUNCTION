@@ -43,18 +43,21 @@ const characters = [
 
 //***FILTER***
 //1. Get characters with mass greater than 100
+
 const G100chars = characters.filter((character) => {
 return character.mass > 100
 });
 
 console.log(G100chars)
+
 //2. Get characters with height less than 200
 const G200chars = characters.filter((character) => {
 return character.height < 200
 });
-
 console.log(G200chars)
 //3. Get characters with eye color "blue"
+const Gblueeyes = characters.filter((char)=>{ return char.eye_color == "blue"})
+console.log(Gblueeyes)
 //3. Get all male characters
 const  Gmalechars = characters.filter((character) => {
     return character.gender === "male"
