@@ -43,31 +43,12 @@ const characters = [
 
 //***FILTER***
 //1. Get characters with mass greater than 100
-const G100chars = characters.filter((character) => {
-return character.mass > 100
-});
-
-console.log(G100chars)
+const G100chars = characters.filter(character =>{
+    return character.mass>100
+})
 //2. Get characters with height less than 200
-const G200chars = characters.filter((character) => {
-return character.height < 200
-});
-
-console.log(G200chars)
-//3. Get characters with eye color "blue"
 //3. Get all male characters
-const  Gmalechars = characters.filter((character) => {
-    return character.gender === "male"
-});
-console.log(Gmalechars)
 //4. Get all female characters
-const  Gfemalechars = characters.filter((character) => {
-   return character.gender === "female"
-});
-console.log(Gfemalechars)
-
-//***REDUCE***
-//1. Get total mass of all characters
 
 //***SORT***
 //1. Sort by mass
